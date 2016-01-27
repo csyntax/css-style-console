@@ -14,13 +14,11 @@ body {
 	min-width: 500px;
 	background: #fff;
 	border-radius: 5px;
-	-webkit-box-shadow: 0px 0px 20px rgba(0,0,0,0.75);
-	-moz-box-shadow: 0px 0px 20px rgba(0,0,0,0.75);
-	-webkit-transition:all 0.5s;
+	-webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.75);
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.75);
 	overflow: hidden;
 }
-
-
 
 @import "topbar";
 
@@ -88,28 +86,48 @@ body {
 */
 
 .cursor {
-	background:#63de00;
-	display:inline-block;
-	width:11px;
-	height:19px;
-	margin-bottom:-3px;
+	display: inline-block;
+	width: 11px;
+	height: 19px;
+	margin-bottom: -3px;
+	background: #63de00;
 }
 
 #body {
-	font-family: Andale Mono, monospace;  line-height: 1em;
-	font-size:13px;
+	font-family: Andale Mono, monospace;  
+	line-height: 1em;
+	font-size: 13px;
 	float: left;
 	width: 100%;
-	min-height:130px;
-	background:#000;
-	padding:10px;
-	line-height:1.5em;
+	min-height: 130px;
+	background: #000;
+	padding: 10px;
+	line-height: 1.5em;
 
 	p {
 		margin-top: 5px;
 		margin-bottom: 5px;
 		font-size: 13px;
 		color: #63de00 !important;
+
+		&::-webkit-selection  {
+			background: #0b209e;
+		}
+
+		&::-moz-selection { 
+			background: #0b209e; 
+		}
+
+		&::selection { 
+			background: #0b209e; 
+		}
+
+		// Todo
+		/*&:before {
+			display: inline-block;
+			margin: 0 auto;
+			content: "$";
+		}*/
 	}
 
 	&:hover .cursor {
@@ -120,29 +138,17 @@ body {
 		-moz-animation-duration: 1.5s;
 		-moz-animation-iteration-count: infinite;
 	}
-
-	p::-webkit-selection  {
-		background:#0b209e;
-	}
-
-	p::selection { 
-		background:#0b209e; 
-	}
-
-	p::-moz-selection { 
-		background:#0b209e; 
-	}
 }
 
 @import "keyframes";
 
-
+/*
 #content {
 	float: left;
 	margin-top: 1px;
 }
 
-/*
+
 #foot{
   height: 23px;
   width: 100%;
@@ -167,9 +173,9 @@ body {
   text-shadow: 1px 1px 0 #c6c6c6;
   font-size: 14px;
 }
-*/
 
-.icon{
+
+.icon {
   width: 86px;
   height: 100px;
   margin: 20px;
@@ -178,7 +184,8 @@ body {
   text-align: center;
   font-size: 12px;
 }
-.icon .frame{
+
+.icon .frame {
   width: 82px;
   height: 82px;
   border-radius: 5px;
@@ -194,3 +201,4 @@ body {
 .icon .folder{
   margin:15px 0 0 6px;
 }
+*/

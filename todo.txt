@@ -2,3 +2,5 @@ http://cssdeck.com/labs/pure-css-osx-terminal
 http://www.codechewing.com/library/mac-terminal-shell-css-html/
 
 https://www.google.bg/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=css+mac+console+design
+
+add reset "normalize css"
