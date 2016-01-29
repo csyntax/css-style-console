@@ -10,48 +10,44 @@
 	width: 14px;
 	height: 14px;
 	border-radius: 14px;
-	-webkit-box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.5), 0px 0px 3px #000 inset;
-	-moz-box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.5), 0px 0px 3px #000 inset;
-	box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.5), 0px 0px 3px #000 inset;
+	-webkit-box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.5), 0px 0px 3px rgb(0,0,0) inset;
+	-moz-box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.5), 0px 0px 3px rgb(0,0,0) inset;
+	box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.5), 0px 0px 3px rgb(0,0,0) inset;
 	overflow: hidden;
 
 	.shine {
 		width: 4px;
 		height: 3px;
 		border-radius: 10px;
-		background: -moz-radial-gradient(center, ellipse cover,  rgba(255, 255, 255, 1) 0%, rgba(255,255,255,0) 100%); /* FF3.6+ */
-		//background-image: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
-		background: -webkit-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
-		background: -o-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Opera 12+ */
-		background: -ms-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* IE10+ */
-		background: radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C */
+		background: -moz-radial-gradient(center, ellipse cover,  rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+		background: -webkit-radial-gradient(center, ellipse cover,  rgba(255, 255, 255,1) 0%, rgba(255, 255, 255, 0) 100%);
+		background: -o-radial-gradient(center, ellipse cover,  rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+		background: -ms-radial-gradient(center, ellipse cover,  rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+		background: radial-gradient(center, ellipse cover,  rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
 	}
 
-	.glow {
+	/*.glow {
 		width:14px;
-		height:8px;
-		//background-image: -webkit-gradient(radial, center bottom, 0, center center, 5, from(rgba(255,255,255,0.75)), to(rgba(255,255,255,0)));
-		background: 0px 0px -moz-radial-gradient(bottom, cover,  rgba(255,255,255,0.70) 0%, rgba(255,255,255,0) 80%); /* FF3.6+ */
-	}
+		height: 8px;
+		background: 0px 0px -moz-radial-gradient(bottom, cover,  rgba(255,255,255,0.70) 0%, rgba(255,255,255,0) 80%);
+	}*/
 }
 
 .red {
-	background: #f41b16;
-	background: -moz-linear-gradient(top,  #f41b16 0%, #fc7471 100%);
-	//background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f41b16), color-stop(100%,#fc7471)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  #f41b16 0%,#fc7471 100%);
+	background: rgb(244, 27, 22);
+	/*background: -moz-linear-gradient(top,  #f41b16 0%, #fc7471 100%);
+background: -webkit-linear-gradient(top,  #f41b16 0%,#fc7471 100%);
 	background: -o-linear-gradient(top,  #f41b16 0%,#fc7471 100%);
 	background: -ms-linear-gradient(top,  #f41b16 0%,#fc7471 100%);
-	background: linear-gradient(top,  #f41b16 0%,#fc7471 100%);
+	background: linear-gradient(top,  #f41b16 0%,#fc7471 100%);*/
 
 	&:active {
-		background: #972f2e;
-        background: -moz-linear-gradient(top,  #972f2e 0%, #fc7471 100%);
-		//background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#972f2e), color-stop(100%,#fc7471)); /* Chrome,Safari4+ */
-		background: -webkit-linear-gradient(top,  #972f2e 0%,#fc7471 100%);
+		background: rgb(151, 47, 46);
+        /*background: -moz-linear-gradient(top,  #972f2e 0%, #fc7471 100%);
+background: -webkit-linear-gradient(top,  #972f2e 0%,#fc7471 100%);
 		background: -o-linear-gradient(top,  #972f2e 0%,#fc7471 100%);
 		background: -ms-linear-gradient(top,  #972f2e 0%,#fc7471 100%);
-		background: linear-gradient(top,  #972f2e 0%,#fc7471 100%);
+		background: linear-gradient(top,  #972f2e 0%,#fc7471 100%);*/
 	}
 
 	.shine {
@@ -60,30 +56,28 @@
 		left: 5px;
 	}
 
-	.glow {
+	/*.glow {
 		position: relative;
 		top: -22px;
-	}
+	}*/
 }
 
 .yellow {
-	background: #f4a316;
-	background: -moz-linear-gradient(left,  #f4a316 0%, #fcc371 100%);
-	//background: -webkit-gradient(linear, left top, right top, color-stop(0%,#f4a316), color-stop(100%,#fcc371)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(left,  #f4a316 0%,#fcc371 100%);
+	background: rgb(244, 163, 22);
+	/*background: -moz-linear-gradient(left,  #f4a316 0%, #fcc371 100%);
+background: -webkit-linear-gradient(left,  #f4a316 0%,#fcc371 100%);
 	background: -o-linear-gradient(left,  #f4a316 0%,#fcc371 100%);
 	background: -ms-linear-gradient(left,  #f4a316 0%,#fcc371 100%);
-	background: linear-gradient(left,  #f4a316 0%,#fcc371 100%);
+	background: linear-gradient(left,  #f4a316 0%,#fcc371 100%);*/
 	margin: 0px 7px;
 
 	&:active {
-		background: #ae4f1e;
-		background: -moz-linear-gradient(top,  #ae4f1e 0%, #fcc371 100%);
-		//background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ae4f1e), color-stop(100%,#fcc371)); /* Chrome,Safari4+ */
-		background: -webkit-linear-gradient(top,  #ae4f1e 0%,#fcc371 100%);
+		background: rgb(174, 79, 30);
+		/*background: -moz-linear-gradient(top,  #ae4f1e 0%, #fcc371 100%);
+background: -webkit-linear-gradient(top,  #ae4f1e 0%,#fcc371 100%);
 		background: -o-linear-gradient(top,  #ae4f1e 0%,#fcc371 100%);
 		background: -ms-linear-gradient(top,  #ae4f1e 0%,#fcc371 100%);
-		background: linear-gradient(top,  #ae4f1e 0%,#fcc371 100%);
+		background: linear-gradient(top,  #ae4f1e 0%,#fcc371 100%);*/
 	}
 
 	.shine {
@@ -92,29 +86,27 @@
 		left: 5px;
 	}
 
-	.glow {
+	/*.glow {
 		position: relative;
 		top: -22px;
-	}
+	}*/
 }
 
 .green {
-	background: #4cae2e;
-	background: -moz-linear-gradient(top,  #4cae2e 0%, #dafc71 100%);
-	//background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4cae2e), color-stop(100%,#dafc71)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  #4cae2e 0%,#dafc71 100%);
+	background: rgb(76,174,46);
+	/*background: -moz-linear-gradient(top,  #4cae2e 0%, #dafc71 100%);
+background: -webkit-linear-gradient(top,  #4cae2e 0%,#dafc71 100%);
 	background: -o-linear-gradient(top,  #4cae2e 0%,#dafc71 100%);
 	background: -ms-linear-gradient(top,  #4cae2e 0%,#dafc71 100%);
-	background: linear-gradient(top,  #4cae2e 0%,#dafc71 100%);
+	background: linear-gradient(top,  #4cae2e 0%,#dafc71 100%);*/
 
 	&:active {
-		background: #48752b;
-		background: -moz-linear-gradient(top,  #48752b 0%, #dafc71 100%);
-		//background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#48752b), color-stop(100%,#dafc71)); /* Chrome,Safari4+ */
-		background: -webkit-linear-gradient(top,  #48752b 0%,#dafc71 100%);
+		background: rgb(72,117,43);
+		/*background: -moz-linear-gradient(top,  #48752b 0%, #dafc71 100%);
+background: -webkit-linear-gradient(top,  #48752b 0%,#dafc71 100%);
 		background: -o-linear-gradient(top,  #48752b 0%,#dafc71 100%);
 		background: -ms-linear-gradient(top,  #48752b 0%,#dafc71 100%);
-		background: linear-gradient(top,  #48752b 0%,#dafc71 100%);
+		background: linear-gradient(top,  #48752b 0%,#dafc71 100%);*/
 	}
 
 	.shine {
@@ -123,8 +115,8 @@
 		left: 5px;
 	}
 
-	.glow {
+	/*.glow {
 		position: relative;
 		top: -22px;
-	}
+	}*/
 }
